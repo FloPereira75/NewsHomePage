@@ -280,7 +280,7 @@ main {
     .main-content_illustration {
         grid-column: 1/2;
         grid-row: 1/2;
-        height: 325px;
+        height: 250px;
         background-image: url(../images/image-web-3-mobile.jpg);
     }
     .main-content_title {
