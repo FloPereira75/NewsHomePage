@@ -47,29 +47,37 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .logo {
     width: 75px;
 }
 
-header nav {
+.nav-menu {
     width: 500px;
 }
 
-header nav ul {
+.nav-menu ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
 }
 
-header nav ul li a {
+.nav-menu ul li a {
     text-decoration: none;
     color: var(--dark-grayish-blue);
     cursor: pointer;
 }
-header nav ul li a:hover {
+.nav-menu ul li a:hover {
     color: var(--soft-red);
+}
+
+.hamburger-btn {
+    display: none;
+}
+.close-btn {
+    display: none;
 }
 
 main {
@@ -225,6 +233,42 @@ main {
     body {
         margin: 30px 15px
     }
+    .nav-menu {
+        display: none;
+    }
+    .active-menu {
+        background: var(--off-white);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 70vw;
+        flex-direction: column;
+        justify-content: center !important;
+        padding: 25px;
+        gap: 25px;
+        box-shadow: -30vw 1px rgb(0, 0, 0, 0.5);
+    }
+    .active-menu li {
+        width: fit-content;
+    }
+    .active-menu li a {
+        font-size: 1.25em;
+        color: var(--very-dark-blue) !important;
+    }
+    .active-menu li a:hover {
+        color: var(--soft-red) !important;
+    }
+    .hamburger-btn {
+        display: block;
+        cursor: pointer;
+    }
+    .close-btn {
+        position: fixed;
+        top: 30px;
+        right: 15px;
+        cursor: pointer;
+    }
     .main-content {
         height: 1155px;
         display: grid;
@@ -236,7 +280,7 @@ main {
     .main-content_illustration {
         grid-column: 1/2;
         grid-row: 1/2;
-        height: 250px;
+        height: 325px;
         background-image: url(../images/image-web-3-mobile.jpg);
     }
     .main-content_title {

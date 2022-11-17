@@ -5,16 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | News homepage</title>
-
   <link rel="stylesheet" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <header>
     <img src="assets/images/logo.svg" alt="Logo" class="logo">
     <nav class="nav-menu">
-      <ul>
+      <ul id="menu">
         <li><a href="#">Home</a></li>
         <li><a href="#">New</a></li>
         <li><a href="#">Popular</a></li>
@@ -22,10 +20,14 @@
         <li><a href="#">Categories</a></li>
       </ul>
     </nav>
+    <div class="hamburger-btn" id="hamburger-btn">
+      <img src="assets/images/icon-menu.svg" alt="menu icon">
+    </div>
+    <div class="close-btn" id="close-btn">
+      <img src="assets/images/icon-menu-close.svg" alt="close icon">
+    </div>
   </header>
-
   <main>
-
     <section class="main-content">
       <div class="main-content_illustration"></div>
       <h1 class="main-content_title">The Bright Future of Web 3.0?</h1>
@@ -51,7 +53,6 @@
         </div>
       </aside>
     </section>
-
     <section class="secondary-content">
       <div class="secondary-content_box">
         <div class="secondary-content_box_img cpu-img"></div>
@@ -78,8 +79,7 @@
         </div>
       </div>
     </section>
-
   </main>
-  
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
